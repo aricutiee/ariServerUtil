@@ -1,0 +1,85 @@
+name: ServerUtil
+version: '${version}'
+main: me.jade.ariServerUtil.AriServerUtil
+api-version: '1.21.11'
+load: POSTWORLD
+authors: [Jade]
+description: Production administration utility for Paper servers.
+commands:
+  util:
+    description: Open the ServerUtil administration GUI.
+    usage: /util [reload]
+    permission: serverutil.use
+  report:
+    description: Report a player to staff.
+    usage: /report <player> <reason>
+    permission: serverutil.report
+  reports:
+    description: Open the reports GUI.
+    usage: /reports
+    permission: serverutil.reports.manage
+  staffmode:
+    description: Toggle Staff Mode.
+    usage: /staffmode
+    permission: serverutil.staffmode
+  staffchat:
+    description: Send or toggle staff chat.
+    usage: /staffchat [message]
+    permission: serverutil.staffchat
+    aliases: []
+  sc:
+    description: Send or toggle staff chat.
+    usage: /sc [message]
+    permission: serverutil.staffchat
+permissions:
+  serverutil.use: {default: op}
+  serverutil.reload: {default: op}
+  serverutil.punishments: {default: op}
+  serverutil.punishments.warn: {default: op}
+  serverutil.punishments.tempmute: {default: op}
+  serverutil.punishments.mute: {default: op}
+  serverutil.punishments.tempban: {default: op}
+  serverutil.punishments.ban: {default: op}
+  serverutil.punishments.clearinventory: {default: op}
+  serverutil.punishments.clearenderchest: {default: op}
+  serverutil.punishments.revoke: {default: op}
+  serverutil.punishments.protected: {default: false}
+  serverutil.punishments.overrideprotected: {default: op}
+  serverutil.players: {default: op}
+  serverutil.players.heal: {default: op}
+  serverutil.players.feed: {default: op}
+  serverutil.players.effects: {default: op}
+  serverutil.players.gamemode: {default: op}
+  serverutil.players.inventory.view: {default: op}
+  serverutil.players.inventory.edit: {default: op}
+  serverutil.players.enderchest.view: {default: op}
+  serverutil.players.enderchest.edit: {default: op}
+  serverutil.players.sensitive: {default: op}
+  serverutil.report: {default: true}
+  serverutil.reports.manage: {default: op}
+  serverutil.reports.notes: {default: op}
+  serverutil.freeze: {default: op}
+  serverutil.freeze.bypass: {default: op}
+  serverutil.history: {default: op}
+  serverutil.rollback: {default: op}
+  serverutil.announcement: {default: op}
+  serverutil.graceperiod: {default: op}
+  serverutil.graceperiod.bypass: {default: op}
+  serverutil.vanish: {default: op}
+  serverutil.vanish.see: {default: op}
+  serverutil.staffmode: {default: op}
+  serverutil.keyall: {default: op}
+  serverutil.lockdown: {default: op}
+  serverutil.lockdown.bypass: {default: op}
+  serverutil.chat.clear: {default: op}
+  serverutil.chat.lock: {default: op}
+  serverutil.chat.bypass: {default: op}
+  serverutil.chat.slowmode: {default: op}
+  serverutil.chat.filter: {default: op}
+  serverutil.chat.filter.bypass: {default: op}
+  serverutil.staffchat: {default: op}
+  serverutil.restart: {default: op}
+  serverutil.performance: {default: op}
+  serverutil.performance.cleanup: {default: op}
+  serverutil.audit: {default: op}
+  serverutil.audit.export: {default: op}
