@@ -3,7 +3,7 @@ version: '${version}'
 main: me.jade.ariServerUtil.AriServerUtil
 api-version: '1.21.11'
 load: POSTWORLD
-authors: [Jade]
+authors: [ari]
 description: Production administration utility for Paper servers.
 commands:
   util:
